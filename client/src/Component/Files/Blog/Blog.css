@@ -1,0 +1,25 @@
+.poster {
+  /* display: flex; */
+  width: 80%;
+  margin: auto;
+  padding: 5rem 0 10rem 0;
+}
+
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .poster {
+    width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .poster {
+    width: 98% !important;
+  }
+}

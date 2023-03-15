@@ -1,0 +1,97 @@
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#nav-bottom {
+  width: 100%;
+  float: left;
+  background: var(--dark-blue);
+  padding: 6rem 0 8rem 0;
+}
+
+.bottom-in {
+  max-width: 80%;
+  margin: auto;
+}
+
+/* left-bottom start */
+
+.bottom-in .left-bottom {
+  width: 60%;
+  float: left;
+  color: var(--font-white);
+}
+
+.bottom-in .left-bottom h1 {
+  font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 700;
+}
+
+.bottom-in .left-bottom > p {
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (2000 - 300)));
+  color: var(--low-opicity-color);
+  line-height: 30px;
+  margin: 10px 0;
+}
+
+/* after */
+
+.notes p {
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 400;
+  color: var(--low-opicity-color);
+}
+
+.notes p a {
+  color: var(--background-red);
+}
+.notes p a:hover {
+  color: var(--hover-blue);
+  transition: 0.3s;
+}
+
+.right-bottom {
+  width: 40%;
+  float: left;
+  position: fixed;
+  right: 0;
+}
+/* next list toggle start */
+
+.Ram {
+  width: 60%;
+  float: left;
+}
+
+@media screen and (max-width: 1150px) {
+  .bottom-in {
+    max-width: 88%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .bottom-in {
+    max-width: 95%;
+    margin: auto;
+  }
+  .bottom-in .left-bottom {
+    width: 100%;
+    float: left;
+    color: var(--font-white);
+  }
+  .right-bottom {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    margin: 4rem 0;
+  }
+  .Ram {
+    width: 100%;
+    float: left;
+  }
+}

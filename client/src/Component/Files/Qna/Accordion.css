@@ -1,0 +1,58 @@
+/* accordion start */
+/* accordion start */
+/* accordion start */
+
+#accordion-A {
+  max-width: 80%;
+  margin: auto;
+}
+
+.accord-A {
+  float: left;
+  margin: 10px 0 0 0;
+  width: 100%;
+}
+
+.accord-A ul .space-A {
+  margin: 1rem 0;
+  list-style: none;
+}
+
+.accord-A ul li > a {
+  width: 100%;
+  background: var(--box-backgroung-blue);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 700;
+  color: var(--font-white);
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.accord-A ul li > a span {
+  color: var(--background-red);
+}
+
+.inner-A li p {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 400;
+  color: var(--low-opicity-color);
+  background: var(--box-backgroung-blue);
+  line-height: 2rem;
+  border-top: 1px solid var(--background-light-blue);
+}
+
+.inner-A li p > a {
+  color: var(--background-red);
+  display: inline-block;
+}
+
+.inner-A li p > a:hover {
+  color: var(--hover-blue);
+  transition: 0.3s;
+}

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.header {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (2000 - 300)));
+  display: flex;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: auto;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  flex: 0.3;
+  justify-content: space-between;
+}
+
+.header .logo .logo-img-1 {
+  width: 120px;
+  margin: 0 20px 0 0;
+}
+
+.arrow {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.header .logo .logo-img-2 {
+  width: 215px;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-evenly;
+  flex: 0.5;
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.header .nav a {
+  text-decoration: none;
+  color: var(--font-white);
+}
+
+.nav a:hover {
+  color: var(--background-red);
+}
+
+.header .button a {
+  text-decoration: none;
+  color: var(--font-white);
+  padding: 15px 25px;
+  background: var(--background-red);
+  border-radius: 50px;
+}
+
+.header .button a:hover {
+  background: var(--background-light-blue);
+  transition: step-start;
+}
+
+.header .button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mobile-button {
+  width: 20px !important;
+  height: 40px !important;
+  margin: 20px 40px !important;
+  display: none;
+}
+.mobile-button span {
+  width: 8px !important;
+  color: #1f1f1f !important;
+  float: left !important;
+}
+
+@media screen and (max-width: 1150px) {
+  .header {
+    max-width: 90% !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    max-width: 98% !important;
+  }
+  .header .nav {
+    display: none;
+  }
+  .header .logo .logo-img-1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .header .logo .logo-img-2 {
+    max-width: 100%;
+    height: auto;
+  }
+  .header .logo {
+    flex: 0.7;
+  }
+}

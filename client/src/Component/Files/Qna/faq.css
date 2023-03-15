@@ -1,0 +1,17 @@
+.info {
+  padding: 60px 0 80px 0;
+  width: 100%;
+  float: left;
+}
+
+.info-main {
+  max-width: 80%;
+  margin: auto;
+}
+
+.info-main p {
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 400;
+  color: var(--low-opicity-color);
+  line-height: 30px;
+}

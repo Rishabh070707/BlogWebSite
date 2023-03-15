@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+.home {
+  display: flex;
+  padding: 1.4rem 0 15rem 0;
+  font-family: "DM Sans", sans-serif;
+  max-width: 80%;
+  margin: auto;
+  align-items: center;
+}
+
+.home .home__left {
+  flex: 0.5;
+  color: var(--font-white);
+}
+
+.home .home__left .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main p {
+  margin: 0.5rem 0 0 0;
+  color: var(--low-opicity-color);
+  font-size: calc(12px + (20 - 12) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+.main p > strong {
+  color: var(--font-white);
+  padding: 0 0.5rem 0 0;
+  font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (2000 - 300)));
+  font-size: 500;
+}
+
+.home .home__left h1 {
+  font-size: calc(20px + (56 - 20) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 600;
+}
+
+.home .home__right {
+  flex: 0.5;
+}
+
+.trail {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.trail a {
+  padding: 15px 25px;
+  background: var(--background-red);
+  margin: 0 2rem 0 0;
+  text-decoration: none;
+  color: var(--font-white);
+  display: inline-block;
+  border-radius: 50px;
+  font-size: calc(12px + (23 - 12) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 300;
+}
+
+.trail a:hover {
+  background-color: var(--background-light-blue);
+  transition: 0.5s linear;
+}
+
+.video {
+  display: flex !important;
+  align-items: center !important;
+  background: var(--background-light-blue) !important;
+}
+
+#link:hover {
+  background: var(--background-red) !important;
+}
+
+/* box plan start here */
+
+.box {
+  background: var(--box-backgroung-blue);
+  color: var(--font-white);
+  padding: 0 0 0.5rem 0;
+  width: 80%;
+}
+
+.box h2 {
+  background: var(--background-light-blue);
+  text-align: center;
+  padding: 0.5rem;
+  font-size: calc(12px + (25 - 12) * ((100vw - 300px) / (2000 - 300)));
+}
+
+.box .plans {
+  background: var(--background-light-blue);
+  margin: 1.5rem;
+  padding: 1rem;
+}
+
+.box .plans-a {
+  /* background: var(--background-light-blue); */
+  margin: 1.5rem;
+}
+
+.box a {
+  text-decoration: none;
+  background: var(--font-white);
+  color: var(--font-black);
+  width: 100%;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 15px 25px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.box a:hover {
+  transition: 100ms linear;
+  background: var(--background-red);
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.price p {
+  color: var(--low-opicity-color);
+  padding: 0 0 0 0.4rem;
+}
+
+.items {
+  background: var(--dark-blue);
+  background: linear-gradient(
+    to right,
+    var(--box-backgroung-blue),
+    var(--dark-blue)
+  );
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+
+.item {
+  background: var(--dark-blue);
+  background: linear-gradient(
+    to right,
+
+    var(--dark-blue),
+    var(--box-backgroung-blue)
+  );
+  /* display: flex; */
+  /* flex-direction: column-reverse; */
+}
+
+.product {
+  display: flex;
+  color: var(--font-white);
+  height: max-content;
+  padding: 5rem 0;
+  max-width: 80%;
+  margin: auto;
+}
+@media screen and (max-width: 1150px) {
+  .home {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .home {
+    max-width: 95%;
+  }
+  .box {
+    width: 90%;
+  }
+  .home .home__left {
+    flex: 0.6;
+  }
+  .home .home__right {
+    flex: 0.4;
+  }
+  .box {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .home {
+    flex-direction: column;
+  }
+  .home .home__left {
+    flex: 1;
+  }
+  .home .home__right {
+    flex: 1;
+    width: 100%;
+  }
+  .box {
+    width: 100% !important;
+  }
+}

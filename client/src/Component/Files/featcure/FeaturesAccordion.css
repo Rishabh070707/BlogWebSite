@@ -1,0 +1,43 @@
+.accord ul li > a {
+  border-radius: 5px;
+}
+
+.accord ul li.space {
+  margin: 1rem 0;
+}
+
+.accord ul li > a {
+  width: 100%;
+  background: var(--box-backgroung-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 700;
+  color: var(--font-white);
+}
+
+.accord ul li > a span {
+  color: var(--background-red);
+}
+
+.inner li p {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: calc(14px + (20 - 14) * ((100vw - 300px) / (2000 - 300)));
+  font-weight: 400;
+  color: var(--low-opicity-color);
+  border-top: 1px solid var(--background-light-blue);
+  background: var(--box-backgroung-blue);
+}
+
+.inner li p > a {
+  color: var(--background-red);
+  display: inline-block;
+}
+
+.inner li p > a:hover {
+  color: var(--hover-blue);
+  transition: 0.3s;
+}
